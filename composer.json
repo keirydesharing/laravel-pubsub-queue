@@ -1,52 +1,52 @@
 {
-    "name": "kainxspirits/laravel-pubsub-queue",
-    "description": "Queue driver for Google Cloud Pub/Sub.",
-    "keywords": [
-        "kainxspirits",
-        "laravel",
-        "queue",
-        "gcp",
-        "google",
-        "pubsub"
-    ],
-    "license": "MIT",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Kendryck",
-            "email": "kainxspirits@users.noreply.github.com"
-        }
-    ],
-    "require": {
-        "php" : ">=7.2",
-        "ext-json": "*",
-        "illuminate/queue": "5.7.* | 5.8.* | ^6.0 | ^7.0",
-        "illuminate/support": "5.7.* | 5.8.* | ^6.0 | ^7.0",
-        "google/cloud-pubsub": "^1.1",
-        "ramsey/uuid": "^2.0|^3.0|^4.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.0|^9.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Kainxspirits\\PubSubQueue\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Kainxspirits\\PubSubQueue\\Tests\\": "tests/"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Kainxspirits\\PubSubQueue\\PubSubQueueServiceProvider"
-            ]
-        }
-    },
-    "minimum-stability": "stable"
+  "name": "kainxspirits/laravel-pubsub-queue",
+  "description": "Queue driver for Google Cloud Pub/Sub.",
+  "keywords": [
+    "kainxspirits",
+    "laravel",
+    "queue",
+    "gcp",
+    "google",
+    "pubsub"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Kendryck",
+      "email": "kainxspirits@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "ext-json": "*",
+    "illuminate/queue": "5.7.* | 5.8.* | ^6.0 | ^7.0 | ^8.0",
+    "illuminate/support": "5.7.* | 5.8.* | ^6.0 | ^7.0 | ^8.0",
+    "google/cloud-pubsub": "^1.1",
+    "ramsey/uuid": "^2.0|^3.0|^4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kainxspirits\\PubSubQueue\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kainxspirits\\PubSubQueue\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kainxspirits\\PubSubQueue\\PubSubQueueServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable"
 }
